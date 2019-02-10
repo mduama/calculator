@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="calculator">
+            <table class="table" border="1">
+                <thead class="thead-dark">
+                    <tr>
+                        <th colspan="4">CALCULATOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">{{ form(form) }}</td>
+                    </tr>
+                    <tr>
+                        <td class="numbers">
+                            <button>7</button>
+                        </td>
+                        <td class="numbers">
+                            <button>8</button>
+                        </td>
+                        <td class="numbers">
+                            <button>9</button>
+                        </td>
+                        <td class="numbers">
+                            <button>+</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numbers">
+                            <button>4</button>
+                        </td>
+                        <td class="numbers">
+                            <button>5</button>
+                        </td>
+                        <td class="numbers">
+                            <button>6</button>
+                        </td>
+                        <td class="numbers">
+                            <button>-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="numbers">
+                            <button>1</button>
+                        </td>
+                        <td class="numbers">
+                            <button>2</button>
+                        </td>
+                        <td class="numbers">
+                            <button>3</button>
+                        </td>
+                        <td class="numbers">
+                            <button>*</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="numbers">
+                            <button>0</button>
+                        </td>
+                        <td class="numbers">
+                            <button>/</button>
+                        </td>
+                    </tr>            
+                </tbody>
+            </table>
+        </div>
+        <div class="messages">
+            {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ label }}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

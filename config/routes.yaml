@@ -1,0 +1,7 @@
+# Redirecting the homepage
+index:
+    path: /
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    defaults:
+        path: /calculator
+        permanent: true

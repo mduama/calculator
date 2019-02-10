@@ -1,0 +1,36 @@
+#calculator_form_input {
+    width: 386px;
+    height: 25px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+#calculator_form_AC {
+    float: right;
+    height: 25px;
+    margin: 5px;
+    padding-bottom: 30px;
+}
+
+#calculator_form_Submit {
+    float: right;
+    height: 25px;
+    margin: 5px;
+    padding-bottom: 30px;
+}
+
+.calculator {
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+.messages {
+    margin-top: 100px;
+    width: 300px;
+    margin-left: 300px;
+}
+
+.numbers button {
+    width: 100%;
+}
